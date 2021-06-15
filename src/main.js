@@ -7,8 +7,10 @@ import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-Vue.use(VueAxios, axios)
+axios.defaults.baseURL='https://quizapi.io/api/v1/questions';
+axios.defaults.headers.common['X-Api-Key'] = process.env.VUE_APP_QUIZ_TOKEN;
 Vue.config.productionTip = false
+Vue.use(VueAxios, axios);
 
 new Vue({
   router,
