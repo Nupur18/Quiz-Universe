@@ -1,5 +1,7 @@
 # Quiz Universe
 
+## [Live website](https://quizuniverse.herokuapp.com/)
+
 ## Project setup
 ```
 npm install
